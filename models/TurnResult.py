@@ -4,7 +4,7 @@ from models.Enums import Action
 from models.Hand import Hand
 
 class TurnResult():
-    def __init__(self, player_name: str, action: Action, hand, card=None, cards=None):
+    def __init__(self, player_name: str, action: Action, hand: Hand, card=None, cards=None):
         self.player_name = player_name
         self.action = action
         self.card = card

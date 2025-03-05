@@ -6,16 +6,19 @@ class Hand():
     def __init__(self):
         self.cards: List[Card] = []
         self.value = 0
+        self.blackjack = False
         
     def add_card(self, card: Card):
         self.cards.append(card)
         self.calc_value()
         
     def add_cards(self, cards: List[Card]):
-        
         for card in cards:
             self.cards.append(card)
             self.calc_value()
+        
+        if self.value == 21:
+            self.blackjack = True
         
     def calc_value(self):
         self.value = 0

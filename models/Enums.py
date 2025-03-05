@@ -4,6 +4,7 @@ class Action(enum.Enum):
     HIT = 'hit'
     STAND = 'stand'
     START = 'start'
+    BUST = 'bust'
 
 class Suit(enum.Enum):
     HEARTS = '♥'
@@ -33,4 +34,3 @@ class Rank(enum.Enum):
             return 10  # Face cards are worth 10
         else:
             return int(self.value)  # For numbered cards, just return the value
-
