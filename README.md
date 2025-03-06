@@ -10,6 +10,8 @@ Play against the dealer in a game of Blackjack.
 
 Betting system with balance tracking.
 
+The player is tracked using Pickle, and spits out a file called player.pkl that sits in the root dir.
+
 🛠️ Installation
 
 1️⃣ Clone the Repository
