@@ -1,21 +1,19 @@
-Blackjack Game
+# Blackjack Game
 
 A simple terminal-based Blackjack game written in Python.
 
 Made for Week 2 of Specialisterne Academy.
 
-🎮 Features
+🎮 **Features**
+- Play against the dealer in a game of Blackjack.
+- Betting system with balance tracking.
+- The player is tracked using Pickle, and spits out a file called `player.pkl` that sits in the root dir.
 
-Play against the dealer in a game of Blackjack.
-
-Betting system with balance tracking.
-
-The player is tracked using Pickle, and spits out a file called player.pkl that sits in the root dir.
-
-🛠️ Installation
+🛠️ **Installation**
 
 1️⃣ Clone the Repository
 
+```bash
 git clone https://github.com/yourusername/blackjack-game.git
 cd blackjack-game
 
@@ -35,7 +33,7 @@ pyinstaller --onefile --noconsole --icon=game.ico main.py
 
 The .exe file will be in the dist/ folder.
 
-🎯 Game Rules
+🎯 **Game Rules**
 
 The goal is to get as close to 21 as possible without going over.
 
@@ -46,20 +44,3 @@ Aces (A) can be 1 or 11, depending on what benefits the hand.
 If your hand exceeds 21, you lose (BUST).
 
 The dealer stands on 17 or higher.
-
-📜 Code Structure
-
-blackjack-game/
-│-- main.py             # Entry point of the game
-│-- utils.py            # Helper functions
-│-- README.md           # Project documentation
-│
-│-- models/             # Contains all game-related models
-│   │-- Card.py         # Card representation
-│   │-- CMDUI.py        # Command-line interface for the game
-│   │-- Deck.py         # Deck management
-│   │-- Enums.py        # Enum definitions for actions and game states
-│   │-- Game.py         # Core game logic and flow
-│   │-- Hand.py         # Player and dealer hand management
-│   │-- Player.py       # Player class
-│   │-- TurnResult.py   # Stores results of each turn
