@@ -49,9 +49,15 @@ The dealer stands on 17 or higher.
 
 blackjack-game/
 │-- main.py             # Entry point of the game
-│-- player.py           # Player class
-│-- dealer.py           # Dealer class
-│-- card.py             # Card and Deck management
-│-- game.py             # Game logic and flow
 │-- utils.py            # Helper functions
 │-- README.md           # Project documentation
+│
+│-- models/             # Contains all game-related models
+│   │-- Card.py         # Card representation
+│   │-- CMDUI.py        # Command-line interface for the game
+│   │-- Deck.py         # Deck management
+│   │-- Enums.py        # Enum definitions for actions and game states
+│   │-- Game.py         # Core game logic and flow
+│   │-- Hand.py         # Player and dealer hand management
+│   │-- Player.py       # Player class
+│   │-- TurnResult.py   # Stores results of each turn
