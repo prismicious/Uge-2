@@ -22,18 +22,18 @@ class Hand():
         
     def calc_value(self):
         self.value = 0
-        
+        aces = 0  # Track the number of Aces
+
         for card in self.cards:
-            if card.rank.isnumeric():
+            if card.rank.isdigit():  # Works for '2'-'10'
                 self.value += int(card.rank)
-                
-            if card.rank in ['J', 'Q', 'K']:
+            elif card.rank in {'J', 'Q', 'K'}:
                 self.value += 10
-                
-            if card.rank == 'A':
-                if self.value + 11 <= 21:
-                    self.value += 11
-                    
-                else:
-                    self.value += 1
-            
+            elif card.rank == 'A':
+                self.value += 11  # Count Ace as 11 first
+                aces += 1  
+
+        # Adjust Aces from 11 to 1 if needed
+        while self.value > 21 and aces:
+            self.value -= 10
+            aces -= 1

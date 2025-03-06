@@ -1,6 +1,6 @@
 import random
 from models.Card import Card
-from models.Enums import Suit, Rank
+from models.Enums import Suit
 
 class Deck():
     def __init__(self):
@@ -10,9 +10,11 @@ class Deck():
         random.shuffle(self.cards)
         
     def draw(self):
+        """"Draw a card from the deck."""
         return self.cards.pop()
     
     def draw_multiple(self, num_cards):
+        """Draw multiple cards from the deck."""
         
         draw = []
         
