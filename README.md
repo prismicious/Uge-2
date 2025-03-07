@@ -22,7 +22,9 @@ cd blackjack-game
 
 Ensure you have Python installed (>=3.8)
 To install the requirements:
-```pip install -r requirements.txt```` 
+```
+pip install -r requirements.txt
+```
 
 3️⃣ Run the Game
 
