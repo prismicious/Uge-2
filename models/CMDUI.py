@@ -12,7 +12,6 @@ from utils import (
 
 
 class CMDUI:
-
     def display_hand(self, player_name, hand, is_concealed=False, card=None):
         """ "Display hand of a player or dealer, with the option to conceal the second card."""
         if is_concealed:
