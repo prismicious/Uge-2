@@ -32,7 +32,7 @@ python main.py
 
 To create a standalone executable:
 
-pyinstaller --onefile --noconsole --icon=game.ico main.py
+pyinstaller --onefile --noconsole main.py
 
 The .exe file will be in the dist/ folder.
 
